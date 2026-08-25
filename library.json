@@ -1,0 +1,7 @@
+{
+  "name": "garnet_ui_core",
+  "version": "0.1.0",
+  "description": "Renderer-agnostic core of the Garnet UI toolkit: touch/geometry primitives, the runtime theme, the GarnetApp screen convention, list/popup layout math, and shared backend-injection contracts. Depended on by garnet_ui (TFT_eSPI) and garnet_ui_lvgl (LVGL) - not useful standalone.",
+  "frameworks": "arduino",
+  "platforms": "espressif32"
+}
