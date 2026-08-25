@@ -33,6 +33,10 @@ nothing that calls a drawing API, and nothing whose type depends on one
   `garnetHandlePopupTap`). Pure geometry/hit-testing, no drawing - each
   backend still draws its own row content and popup chrome against this
   same layout.
+- `garnet_time.h`/`.cpp` - `garnetEvery`, a millis()-based "at most once
+  every N ms" rate limiter. Pure time math, no rendering assumptions -
+  used by both backends' screens for periodic content refresh (e.g. a
+  WiFi screen's slow-timer signal-strength readout).
 - `garnet_backends.h` - the backend-injection contracts for each
   ready-made screen (`WifiSelectorBackend`, `SdBrowserBackend`,
   `QuickPanelBackend`). These are plain function-pointer structs a
